@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单学习-登录注册</title>
+</head>
+<body>
+    <h1>注册</h1>
+
+    <!-- 表单form 
+        action:表单提交的位置，可以是网站/请求处理地址
+        method:post、get 提交方式
+    -->
+    <form action="demo1.html" method="get">
+
+        <!-- 文本输入框  name：取名  -->
+        <!-- <p>名字：<input type="text" name="username" value="戴花花" maxlength="11" readonly></p> -->
+        <p>名字：<input type="text" name="username" placeholder="请输入用户名" required></p>
+
+        <!-- 密码输入框-->
+        <p>密码：<input type="password" name="pwd" value="123456" hidden></p>
+
+        <!-- 单选框：radio
+        value：单选框的值
+        name：表示组，必须要在同一个组里才能单选
+        checked:默认选项
+        -->
+        <p>性别：
+            <input type="radio" value="boy" name="sex" checked disabled/>男
+            <input type="radio" value="girl" name="sex"/>女
+        </p>
+
+        <!-- 多选框:checkbox
+            value为真正提交的值：hobby=chat
+            checked:默认选项
+        -->
+        <p>爱好：
+            <input type="checkbox" value="sleep" name="hobby">睡觉
+            <input type="checkbox" value="code" name="hobby" checked>写代码
+            <input type="checkbox" value="chat" name="hobby">聊天
+            <input type="checkbox" value="game" name="hobby">打游戏
+        </p>
+
+        <!-- 按钮 
+        type="button"  普通按钮
+        type="image"   图像按钮
+        type="submit"  提交按钮
+        type="reset"   重置按钮
+        -->
+        <p>按钮：
+            <input type="button" name="btn1" value="点击变长">
+            <!-- 图片按钮:可以提交 -->
+            <input type="image" src="img1.jpg">
+        </p>
+
+        <!-- 下拉框：select
+            提交选择的选项：country=china
+            selected：默认选项
+        -->
+        <p>国家：
+            <select name="country">
+                <option value="china">中国</option>
+                <option value="us">美国</option>
+                <option value="japan">日本</option>
+                <option value="england" selected>英国</option>
+            </select>
+        </p>
+
+        <!-- 文本域
+            cols="30" rows="10" ：列、行
+        -->
+        <p>反馈：
+            <textarea name="textarea" cols="30" rows="10">文本内容</textarea>
+        </p>
+
+        <!-- 文件域 -->
+        <p>
+            <input type="file" name="files">
+            <input type="button" value="上传" name="upload">
+        </p>
+
+        <!-- 邮箱验证 -->
+        <p>邮箱：
+            <input type="email" name="email">
+        </p>
+        <!-- URL验证 -->
+        <p>URL:
+            <input type="url" name="url">
+        </p>
+        <!-- 数字验证,step:步长 -->
+        <p>数字：
+            <input type="number" name="number" max="100" min="0" step="10">
+        </p>
+
+        <!-- 滑块 -->
+        <p>音量：
+            <input type="range" name="voice" max="100" min="0" step="2">
+        </p>
+
+        <!-- 搜索框 -->
+        <p>搜索：
+            <input type="search" name="search">
+        </p>
+
+        <p>
+            <!-- 增强鼠标可用性 -->
+            <label for="mark">你点我试试</label>
+            <input type="text" id="mark">
+        </p>
+
+        <!-- 正则表达式--自定义邮箱 -->
+        <p>自定义邮箱
+            <input type="text" name="diymail" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$">
+        </p>
+
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+
+        <!-- button标签 -->
+        <button type="submit">按钮</button>
+        <br/>
+        <button><img src="img/img1.jpg" alt="成毅图片"></button>
+        
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的四种导入方式</title>
+    <!-- 规范：在编写css代码 ，每一个声明，最好使用分号结尾
+    语法:
+        选择器{
+            声明1；
+            声明2；
+            声明3；
+        }
+    -->
+    <!-- 选择了body中所有h1标签 -->
+
+    
+
+    <!-- 4.外部样式表：导入式 -->
+    <style>
+        @import url("css/style.css");
+    </style>
+
+    <!-- 2.内部样式表 -->
+    <style>
+        h1{
+            color: blueviolet;
+        }
+    </style>
+
+    <!-- 3.外部样式表-链接式：将css样式文件与html进行链接 -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <!-- 1.行内样式：直接在标签元素中编写 -->
+    <h1>这是一个标题</h1>
+
+</body>
+
+</html>

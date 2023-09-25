@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本样式</title>
+    <style>
+        /* 颜色表示：
+        1 英文单词
+        2 十六进制 #000000
+        3 rgb()函数
+        4 rgba()函数 + 加入透明度a: 取值0-1       
+        */
+
+        /* 文本样式：
+        text-align: center;  文本居中
+        text-indent: 2em;  首行缩进2个字符，em代表字符
+        line-height: 200px;  行高，当行高与块的高度相同时，可以使文本上下居中
+        text-decoration: underline;line-through;overline;  下划线、中划线、上划线
+        文本图片水平对齐：需要有参照物
+        */
+        h2{
+            color: rgba(5, 155, 255,0.9);
+            text-align: center;
+        }
+        p{
+            text-indent: 2em;
+        }
+        .p1{
+            background-color: palevioletred;
+            height: 200px;
+            line-height: 200px;
+        }
+        .p2{
+            text-decoration: underline;
+
+        }
+        .p3{
+            text-decoration: line-through;
+        }
+        .p4{
+            text-decoration: overline;
+        }
+        img,span{
+            vertical-align: middle;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>习近平会见柬埔寨首相洪玛奈</h2>
+    <p class="p1">新华社北京9月15日电  （记者郑明达）9月15日上午，国家主席习近平在人民大会堂会见来华进行正式访问的柬埔寨首相洪玛奈。</p>
+    <p class="p2">习近平指出，洪玛奈首相就任后选择中国作为第一个进行双边访问的国家，充分体现了柬埔寨新一届政府对巩固和发展中柬友好的高度重视。中国和柬埔寨是铁杆朋友。建交65年来，双方始终高度互信、平等相待、互利双赢，始终坚定支持对方维护国家主权、安全、发展利益，这是中柬命运共同体的核心要义。今年，双方开启建设高质量、高水平、高标准中柬命运共同体的新时代。中方愿同柬方一道，推动中柬命运共同体建设走深走实，携手打造构建人类命运共同体的典范。</p>
+    <p class="p3">习近平强调，中方坚定支持柬埔寨探索符合本国国情的发展道路，愿同柬方保持经常性战略沟通，深化治国理政经验交流。双方要发挥好政府间协调委员会机制作用，落实好新版中柬命运共同体行动计划，充实中柬“钻石六边”合作架构，共建“工业发展走廊”和“鱼米走廊”，推动有关重点合作事项早日落地见效。中方愿同柬方常态化开展执法安全合作，持续打击网络赌博、电信诈骗等跨境犯罪。双方要继续办好“中柬友好年”系列活动，扩大两国青年、地方、教育、旅游、医疗卫生等领域合作，让中柬友好为两国人民带来更多福祉。</p>
+    <p class="p4">习近平指出，不论国际和地区形势如何变化，中国始终是柬埔寨最可信赖的朋友、最为坚定的依靠。中方愿同柬方并肩携手，共同维护国际公平正义，维护广大发展中国家正当权益。</p>
+    <p>
+        <img src="img/img2.jpg" alt="" style="width: 500px; height: 300px; ;">
+        <span>习近平指出，不论国际和地区形势如何变化，中国始终是柬埔寨最可信赖的朋友、最为坚定的依靠。中方愿同柬方并肩携手，共同维护国际公平正义，维护广大发展中国家正当权益。</span>        
+    </p>
+    
+
+</body>
+</html>

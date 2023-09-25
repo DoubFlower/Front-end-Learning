@@ -1,0 +1,42 @@
+#nav{
+    width: 300px;
+    background-color: beige;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 35px;
+    /* 图片需要选择合适大小的图片，图片太大则无法显示 */
+    /* background:颜色 图片 图片位置 平铺方式 */
+    background:goldenrod url(../img/方向下.png) 268px 4px no-repeat;
+}
+
+/*  list-style
+none ：去掉原点
+circle：空心圆
+decimal：数字
+square：正方形
+*/
+ul{
+    padding-left: 15px;
+}
+ul li{
+    line-height: 30px;
+    list-style: none;
+    text-indent: 1.5em;
+    background-image: url(../img/方向右.png);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: orange;
+    text-decoration: underline;
+}

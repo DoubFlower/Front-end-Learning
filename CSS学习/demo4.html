@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+
+    <!-- 避免使用class与id选择器 -->
+    <style>
+        /* 冒号：结构选择器 */
+        /* 选中ul的第一个子元素 */
+        ul li:first-child{
+            background: red;
+        }
+
+        /* 选中ul的最后一个子元素 */
+        ul li:last-child{
+            background: goldenrod;
+        }
+
+        /* 选中p1 */
+        p:first-child{
+            background: green;
+        }
+        /* 定位到p元素的父级元素，选中父级元素的第一个子元素，并且是当前元素（p元素）才生效 */
+        p:nth-child(2){
+            background: rgb(90, 218, 235);
+        }
+
+        /* 定位到p元素的父级元素，选中父级元素的第一个类型为p的子元素 */
+        p:nth-of-type(2){
+            background: rebeccapurple;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    
+<h1>h1</h1>
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+<ul>
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+</ul>
+
+
+
+
+
+</body>
+</html>

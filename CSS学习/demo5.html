@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+</head>
+<style>
+    /* 
+        text-decoration: none;  去掉文字下划线 
+        display:block;  块级元素
+        font:bold 20px/50px Arial;  字体：加粗  字体大小/行高 字体样式
+    */
+    .demo a{
+        float: left;
+        display:block;
+        height: 50px;
+        width: 50px;
+        border-radius: 30px;
+        background: gold;
+        text-align: center;
+        color: #000;
+        text-decoration: none;
+        margin-right: 10px;
+        font:bold 20px/50px Arial;
+    }
+    /* 选中具有id属性的标签 */
+    /* 属性选择器： a[]{} */
+    /* 
+        属性名=属性值（正则）
+        = ：绝对等于
+        *= ：包含这个元素
+        ^= ：以这个开头
+        $= ：以这个结尾
+    */
+    a[id]{
+        background: rgb(223, 49, 49);
+    }
+
+    /* 选中id属性为first的元素 */
+    a[id=first]{
+        background: rgb(247, 87, 13);
+    }
+
+    /* 选中class属性中有links的元素 */
+    /* 需要加引号，因为class不唯一 */
+    a[class*="links"]{
+        background: green;
+    }
+
+    /* 选中href中以http开头的元素 */
+    a[href^=http]{
+        background: rebeccapurple;
+    }
+
+    /* 选中href中以pdf开头的元素 */
+    a[href$=pdf]{
+        background: rgb(26, 101, 240);
+    }
+
+</style>
+
+
+<body>
+    
+<p class="demo">
+    <a href="https://cn.bing.com/" class="links item first" id="first">1</a>
+    <a href="https://fanyi.baidu.com/#zh/en/%E4%B8%AD%E9%97%B4" class="links item active" target="_blank" title="test">2</a>
+    <a href="css/123.html" class="links item">3</a>
+    <a href="css/123.png" class="links item " >4</a>
+    <a href="css/123.jpg" class="links item " >5</a>
+    <a href="a.pdf" class="links item " id="middle">6</a>
+    <a href="abc.docx" class="links item " >7</a>
+    <a href="abcd.pdf" class="links item " >8</a>
+    <a href="img/a.png" class="links item " >9</a>
+    <a href="img/b.png" class="links item last" id="last">10</a>
+
+</p>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        /* body默认存在8px的外边距 */
+        body{
+            margin: 0px;
+        }
+        /* border: 粗细width 样式style 颜色color */
+        /* solid：实线; dashed：虚线; */
+        /* margin: 上右下左（顺时针旋转）  或者  （上下）（左右） */
+        /* auto：使用auto，则居中对齐 */
+        #app{
+            width: 300px;
+            border: 1px solid #000;
+            margin: 0px auto;
+        }
+        h2{
+            font-size: 17px;
+            margin: 0;
+            background-color: rgb(12, 187, 240);
+        }
+        form{
+            background-color: rgb(148, 247, 225);
+        }
+        input{
+            border: 1px solid black;
+        }
+        /* 定位到第一个div下面的input标签 */
+        /* div:nth-of-type(1) input{
+            border: 2px solid rgb(86, 28, 223);
+        }
+        div:nth-of-type(2) input{
+            border: 2px solid rgb(10, 61, 226);
+        }
+        div:nth-of-type(3) input{
+            border: 2px dashed rgb(233, 14, 196);
+        } */
+    </style>
+</head>
+<body>
+    <!-- 养成习惯，在所有模块外面都套一个div -->
+    <!-- 整个页面在一个div中完成编写 -->
+    <div id="app">
+        <h2>会员登录</h2>
+        <form action="#">
+            <div>
+                <span>姓名：</span>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+                <span>密码：</span>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+                <span>邮箱：</span>
+                <input type="text" name="" id="">
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+</body>
+</html>

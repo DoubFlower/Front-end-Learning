@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+<style>
+    body{
+        padding: 20px;
+    }
+    /* 默认写法 */
+    div{
+        margin: 10px;
+        padding: 5px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    #father{
+        border: 2px solid saddlebrown;
+        padding: 0;
+        position: relative;
+    }
+    #first{
+        border: 2px dashed rgb(118, 228, 15);
+        background-color: rgb(118, 228, 15);
+        position: absolute;   /* 绝对定位：上下左右 */
+        top: 20px;   /* 距离顶部多少距离 */
+        left: 20px;
+    }
+    #second{
+        border: 2px dashed rgb(15, 125, 228);
+        background-color: rgb(15, 125, 228);
+    }
+    #third{
+        border: 2px dashed rgb(233, 47, 94);
+        background-color: rgb(233, 47, 94);
+        /* position: relative;
+        bottom: -20px;
+        right: 20px; */
+    }
+</style>
+
+</head>
+<body>
+
+    <div id="father">
+        <div id="first">第一个盒子</div>
+        <div id="second">第二个盒子</div>
+        <div id="third">第三个盒子</div>
+    
+    
+    </div>
+
+
+
+
+    
+</body>
+</html>

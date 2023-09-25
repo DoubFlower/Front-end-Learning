@@ -1,0 +1,21 @@
+body,div,ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#app{
+    width: 400px;
+    font-size: 12px;
+    line-height: 25px;
+    border: 2px sandybrown solid;
+}
+
+/* 父级元素相对定位 */
+#app ul{
+    position: relative;
+}
+
+#app ul li:nth-of-type(2){
+    background-color: palegreen;
+}

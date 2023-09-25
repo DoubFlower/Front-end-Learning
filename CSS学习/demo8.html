@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接伪类</title>
+    <style>
+        /* 默认字体颜色 */
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        /* 鼠标悬浮 */
+        a:hover{
+            color: orange;
+            font-size: 50px;
+        }
+        /* 鼠标按住未释放 */
+        a:active{
+            color: green;
+        }
+        /* text-shadow: 阴影颜色 水平偏移 垂直偏移 阴影半径 */
+        #money{
+            text-shadow: rgb(243, 71, 40) 5px 5px 2px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <a href="">
+        <img src="img/img1.jpg" alt="" style="height:380px;width: 300px; ">
+    </a>
+    <p>
+        <a href="">码出高效：Java开发手册</a>
+    </p>
+    <p>
+        <a href="">作者: 杨冠宝 / 高海慧</a>
+    </p>
+    <p id="money">
+        <a href="">定价: 99.00元</a>
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框+阴影</title>
+
+    <style>
+        /* 
+            border-radius: 左上 右上 右下 左下 （顺时针）
+            当只有两个值的时候为：（左上、右下）（右上、左下）
+            画一个圆圈：圆角 = 圆的半径（内容的一半 + border）
+        */
+        #circle{
+            width: 100px;
+            height: 100px;
+            border-color: brown;
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 55px;
+        }
+        /* 半圆：高度（height + border）需要和半径相同 */
+        #semicircle{
+            width: 100px;
+            height: 50px;
+            border-color: brown;
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 55px 55px 0 0;
+        }
+        img{
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- 画一个圆 -->
+<div id="circle"></div>
+<!-- 半圆 -->
+<div id="semicircle"></div>
+<!-- 将一张图片变圆 -->
+<img src="img/img3.png" alt="">
+
+
+</body>
+</html>

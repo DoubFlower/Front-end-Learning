@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+<body>
+    
+<!-- 表格标签  --table
+    行：row  --tr
+    列：column  --td
+    边框： --border
+-->
+<table border="1px" width="300px">
+    <tr>
+        <!-- 跨列：colspan-->
+        <td colspan="3">1-1</td>        
+    </tr>
+    <tr>
+        <!-- 跨行：rowspan-->
+        <td rowspan="2" width="80px">2-1</td>
+        <td>2-2</td>
+        <td>2-3</td>
+    </tr>
+    <tr>       
+        <td>3-1</td>
+        <td>3-2</td>
+        <!-- <td>3-3</td> 删掉，否则会被挤出去-->
+    </tr>
+</table>
+
+<!-- 
+    竖直对齐：valign
+    设置行或列的背景色：bgcolor
+ -->
+<table border="1" width="200px">
+    <tr>
+        <!-- 上方对齐 -->
+        <td width="50%" valign="top" bgcolor="gray">1</td>
+        <td>
+               2   <br/>
+               2   <br/>
+               2   <br/>
+        </td>
+    </tr>   
+    <tr>
+        <!-- 中部对齐 -->
+        <td valign="middle"  >3</td>
+        <td bgcolor="pink">
+               4   <br/>
+               4   <br/>
+               4   <br/>
+        </td>
+    </tr>   
+    <tr>
+        <!-- 下方对齐 -->
+        <td valign="bottom" >a</td>
+        <td>
+               b   <br/>
+               b   <br/>
+               b   <br/>
+        </td>
+    </tr>  
+</table>
+
+    
+</body>
+</html>
